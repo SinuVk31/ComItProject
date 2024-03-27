@@ -4,8 +4,8 @@ LABEL authors="sinu"
 
 WORKDIR /app
 
-COPY requirement.txt .
-RUN pip3 install -r requirement.txt
+COPY ./requirement.txt .
+RUN pip3 install -r ./requirement.txt
 
 COPY . .
 
