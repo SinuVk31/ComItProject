@@ -2,10 +2,10 @@ FROM python:3.10.12
 
 LABEL authors="sinu"
 
-WORKDIR ./PycharmProjects/pythonProject/app
+WORKDIR /app
 
-COPY requirement.txt .
-RUN pip3 install -r requirement.txt
+COPY ./requirement.txt .
+RUN pip3 install -r ./requirement.txt
 
 COPY . .
 
