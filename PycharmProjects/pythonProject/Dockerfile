@@ -4,8 +4,8 @@ LABEL authors="sinu"
 
 WORKDIR /app
 
-COPY ./pythonProject/requirement.txt .
-RUN pip3 install -r ./pythonProject/requirement.txt
+COPY PycharmProjects/pythonProject/requirement.txt .
+RUN pip3 install -r PycharmProjects/pythonProject/requirement.txt
 
 COPY . .
 
