@@ -7,7 +7,7 @@ WORKDIR ./PycharmProjects/pythonProject/app
 COPY ./requirement.txt .
 RUN pip3 install -r ./requirement.txt
 
-COPY . .
+COPY ./src .
 
 EXPOSE 8000
 
